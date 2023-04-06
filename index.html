@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Birthday Gift List</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
+      integrity="sha512-pwVnMnLpUV8fr+1eJy1nHZZb+fYvHK8+QW01qInxJ2rZfoe60T8T+jkFUVpZXsGjJgnlI+iboszxtZjxxy83Tw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+      <div class="max-w-md mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="bg-orange-500 text-white py-4 px-6">
+          <h1 class="text-2xl font-bold">Birthday Gift List</h1>
+        </div>
+        <form class="py-4 px-6" id="gift-list-form">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label
+                class="block text-gray-700 font-bold mb-2"
+                for="gift-name-input"
+              >
+                Gift Name
+              </label>
+              <input
+                class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="gift-name-input"
+                type="text"
+                placeholder="Enter gift name"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-gray-700 font-bold mb-2"
+                for="gift-link-input"
+              >
+                Gift Link
+              </label>
+              <input
+                class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="gift-link-input"
+                type="url"
+                placeholder="Enter gift link"
+                required
+              />
+            </div>
+          </div>
+          <button
+            class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded mt-4"
+            type="submit"
+          >
+            Add Gift
+          </button>
+        </form>
+        <div class="bg-gray-100 py-4 px-6" id="gift-list">
+          <h2 class="text-lg font-bold mb-4">Gift List</h2>
+          <ul>
+            <!-- Gift items will be added dynamically here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
